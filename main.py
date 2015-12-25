@@ -3,6 +3,13 @@ import requests
 from bs4 import BeautifulSoup
 import time, datetime
 
+'''
+Change the URL
+'''
+
+#need to change this
+URL= "https://twitter.com/SnShines"
+
 def getPosts(url):
     out_file= open("posts.html", "w")
 
@@ -21,8 +28,10 @@ def parsePosts(file_name, interest_date):
     entries= []
     flag= True
 
+    #need to use this from URL
     while flag and '<a href="/SnShines/status' in posts_data:
         entry_text= ""
+        # need to use this from URL
         posts_data= posts_data[posts_data.index('<a href="/SnShines/status'):]
         soup= BeautifulSoup(posts_data, "html.parser")
 
@@ -32,17 +41,15 @@ def parsePosts(file_name, interest_date):
         #print(post_date[:10], interest_date)
 
         if (post_date[:10])== interest_date:
-            entry_text+= post_date[10:]
-            entry_text+= "\n"
-            entry_text+= "https://twitter.com"+ soup.a["href"]
+            entry_text+= post_date[11:]
+            entry_text+= " - https://twitter.com"+ soup.a["href"]
             entry_text+= "\n\n"
             entry_text+= str(soup.p)
-            entry_text+= "\n\n<hr>\n"
+            entry_text+= "\n<hr>\n"
 
             entries.append(entry_text)
         else:
-            pass
-            #flag= False
+            flag= False
 
         # print(soup.a)
         # print(soup.p)
@@ -72,11 +79,9 @@ def makeDayoneEntry(entries):
 
 
 if __name__== "__main__":
-    URL= "https://twitter.com/SnShines"
     interest_date= (time.strftime("%Y-%m-%d"))
-    interest_date= "2015-12-21"
 
-    #getPosts(URL)
+    getPosts(URL)
 
     entries= parsePosts("posts.html", interest_date)
 
