@@ -86,4 +86,3 @@ if __name__== "__main__":
     entries= parsePosts("posts.html", interest_date)
 
     makeDayoneEntry(entries)
-
