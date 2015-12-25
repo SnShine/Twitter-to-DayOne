@@ -7,3 +7,7 @@ Today's tweets
 
 <p class="TweetTextSize TweetTextSize--26px js-tweet-text tweet-text" data-aria-label-part="0" lang="en">Almost completed!</p>
 <hr>
+21:20:21 - https://twitter.com/SnShines/status/680415289226309637
+
+<p class="TweetTextSize TweetTextSize--26px js-tweet-text tweet-text" data-aria-label-part="0" lang="en">Here's the link to get your tweets to DayOne. <a class="twitter-timeline-link" data-expanded-url="https://github.com/SnShine/Twitter-to-DayOne" dir="ltr" href="https://t.co/18NYxUjjH2" rel="nofollow" target="_blank" title="https://github.com/SnShine/Twitter-to-DayOne"><span class="tco-ellipsis"></span><span class="invisible">https://</span><span class="js-display-url">github.com/SnShine/Twitte</span><span class="invisible">r-to-DayOne</span><span class="tco-ellipsis"><span class="invisible"> </span>…</span></a> <a class="twitter-atreply pretty-link js-nav" data-mentioned-user-id="246011382" dir="ltr" href="/dayoneapp"><s>@</s><b>dayoneapp</b></a> <a class="twitter-atreply pretty-link js-nav" data-mentioned-user-id="2350753812" dir="ltr" href="/dayone"><s>@</s><b>dayone</b></a></p>
+<hr>
