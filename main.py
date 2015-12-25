@@ -32,12 +32,12 @@ def parsePosts(file_name, interest_date):
         #print(post_date[:10], interest_date)
 
         if (post_date[:10])== interest_date:
-            entry_text+= post_date
-            entry_text+= "\n\n"
-            entry_text+= soup.a["href"]
+            entry_text+= post_date[10:]
+            entry_text+= "\n"
+            entry_text+= "https://twitter.com"+ soup.a["href"]
             entry_text+= "\n\n"
             entry_text+= str(soup.p)
-            entry_text+= "\n\n\n"
+            entry_text+= "\n\n<hr>\n"
 
             entries.append(entry_text)
         else:
@@ -60,10 +60,13 @@ def makeDayoneEntry(entries):
     #print(entries)
 
     entry_text= "".join(entries)
+    entry_text= "Today's tweets\n"+ entry_text
 
-    print(entry_text)
+    entry_file= open("entries.txt", "w")
+    entry_file.write(entry_text)
+    entry_file.close()
 
-    outText= "echo '"+ entry_text+ "' | dayone new"
+    outText= "dayone new<entries.txt"
     os.system(outText)
 
 
@@ -79,4 +82,3 @@ if __name__== "__main__":
 
     makeDayoneEntry(entries)
 
-    # '<a href="/SnShines/status'
