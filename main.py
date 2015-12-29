@@ -4,11 +4,15 @@ from bs4 import BeautifulSoup
 import time, datetime
 
 '''
-Change the URL
+1. Set the USER_NAME to your twitter handle
 '''
 
 #need to change this
-URL= "https://twitter.com/SnShines"
+USER_NAME= "SnShines"
+
+
+URL= "https://twitter.com/"+ USER_NAME
+
 
 def getPosts(url):
     out_file= open("posts.html", "w")
@@ -28,11 +32,12 @@ def parsePosts(file_name, interest_date):
     entries= []
     flag= True
 
-    #need to use this from URL
-    while flag and '<a href="/SnShines/status' in posts_data:
+
+    find_string= '<a href="/'+ USER_NAME+ '/status'
+    while flag and find_string in posts_data:
         entry_text= ""
-        # need to use this from URL
-        posts_data= posts_data[posts_data.index('<a href="/SnShines/status'):]
+
+        posts_data= posts_data[posts_data.index(find_string):]
         soup= BeautifulSoup(posts_data, "html.parser")
 
         unix_time= (soup.a.span["data-time"])
