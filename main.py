@@ -15,6 +15,7 @@ URL= "https://twitter.com/"+ USER_NAME
 
 
 def getPosts(url):
+    print("Fetching tweets from twitter handle: @"+ USER_NAME)
     out_file= open("posts.html", "w")
 
     r= requests.get(url)
@@ -25,6 +26,7 @@ def getPosts(url):
 
 
 def parsePosts(file_name, interest_date):
+    print("Parsing fetched html page to find today's tweets...")
     posts_file= open(file_name, "r")
     posts_data= posts_file.read()
     posts_file.close()
@@ -68,6 +70,7 @@ def parsePosts(file_name, interest_date):
 
 
 def makeDayoneEntry(entries):
+    print("Making DayOne entry...")
     entries= entries[::-1]
     #print(entries)
 
@@ -90,4 +93,9 @@ if __name__== "__main__":
 
     entries= parsePosts("posts.html", interest_date)
 
-    makeDayoneEntry(entries)
+    if len(entries)>0:
+        print("Found %d tweets tweeted on %s (today)" %(len(entries), interest_date))
+
+        makeDayoneEntry(entries)
+    else:
+        print("You haven't tweeted yet!")

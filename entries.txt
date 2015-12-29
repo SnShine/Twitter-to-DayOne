@@ -1,13 +1,5 @@
 Today's tweets
-20:27:55 - https://twitter.com/SnShines/status/680402095871148032
+20:26:09 - https://twitter.com/SnShines/status/681851203857166336
 
-<p class="TweetTextSize TweetTextSize--26px js-tweet-text tweet-text" data-aria-label-part="0" lang="en">Working on script to fetch your tweets and make a <a class="twitter-atreply pretty-link js-nav" data-mentioned-user-id="2350753812" dir="ltr" href="/dayone"><s>@</s><b>dayone</b></a> entry. Stay tuned to <a class="twitter-timeline-link" data-expanded-url="https://github.com/SnShine" dir="ltr" href="https://t.co/YfxcyCsgth" rel="nofollow" target="_blank" title="https://github.com/SnShine"><span class="tco-ellipsis"></span><span class="invisible">https://</span><span class="js-display-url">github.com/SnShine</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible"> </span></span></a></p>
-<hr>
-20:42:40 - https://twitter.com/SnShines/status/680405808845209604
-
-<p class="TweetTextSize TweetTextSize--26px js-tweet-text tweet-text" data-aria-label-part="0" lang="en">Almost completed!</p>
-<hr>
-21:20:21 - https://twitter.com/SnShines/status/680415289226309637
-
-<p class="TweetTextSize TweetTextSize--26px js-tweet-text tweet-text" data-aria-label-part="0" lang="en">Here's the link to get your tweets to DayOne. <a class="twitter-timeline-link" data-expanded-url="https://github.com/SnShine/Twitter-to-DayOne" dir="ltr" href="https://t.co/18NYxUjjH2" rel="nofollow" target="_blank" title="https://github.com/SnShine/Twitter-to-DayOne"><span class="tco-ellipsis"></span><span class="invisible">https://</span><span class="js-display-url">github.com/SnShine/Twitte</span><span class="invisible">r-to-DayOne</span><span class="tco-ellipsis"><span class="invisible"> </span>…</span></a> <a class="twitter-atreply pretty-link js-nav" data-mentioned-user-id="246011382" dir="ltr" href="/dayoneapp"><s>@</s><b>dayoneapp</b></a> <a class="twitter-atreply pretty-link js-nav" data-mentioned-user-id="2350753812" dir="ltr" href="/dayone"><s>@</s><b>dayone</b></a></p>
+<p class="TweetTextSize TweetTextSize--26px js-tweet-text tweet-text" data-aria-label-part="0" lang="en">.<a class="twitter-atreply pretty-link js-nav" data-mentioned-user-id="3016930778" dir="ltr" href="/kgsdora"><s>@</s><b>kgsdora</b></a> how are you? Been a long time. <img alt="😍" aria-label="Emoji: Smiling face with heart-shaped eyes" class="Emoji Emoji--forText" draggable="false" src="https://abs.twimg.com/emoji/v2/72x72/1f60d.png" title="Smiling face with heart-shaped eyes"/></p>
 <hr>
