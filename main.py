@@ -87,15 +87,22 @@ def makeDayoneEntry(entries):
 
 
 if __name__== "__main__":
+    # get current date to cross-check with parsed tweets
     interest_date= (time.strftime("%Y-%m-%d"))
 
+    # Fetch tweets from provided twitter handle
     getPosts(URL)
 
+    # Parse fetched html page
     entries= parsePosts("posts.html", interest_date)
 
+    # make dayOne entry if there are enough entries
     if len(entries)>0:
         print("Found %d tweets tweeted on %s (today)" %(len(entries), interest_date))
-
+        # make one DayOne entry with all the parsed html tweets
         makeDayoneEntry(entries)
     else:
         print("You haven't tweeted yet!")
+
+    print("Opening DayOne app as a reminder to make a manual entry...")
+    os.system("open -a 'Day One'")

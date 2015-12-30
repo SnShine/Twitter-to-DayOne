@@ -3,3 +3,8 @@ Today's tweets
 
 <p class="TweetTextSize TweetTextSize--26px js-tweet-text tweet-text" data-aria-label-part="0" lang="en">.<a class="twitter-atreply pretty-link js-nav" data-mentioned-user-id="3016930778" dir="ltr" href="/kgsdora"><s>@</s><b>kgsdora</b></a> how are you? Been a long time. <img alt="😍" aria-label="Emoji: Smiling face with heart-shaped eyes" class="Emoji Emoji--forText" draggable="false" src="https://abs.twimg.com/emoji/v2/72x72/1f60d.png" title="Smiling face with heart-shaped eyes"/></p>
 <hr>
+21:04:32 - https://twitter.com/SnShines/status/681860862949212161
+
+<p class="TweetTextSize TweetTextSize--26px js-tweet-text tweet-text" data-aria-label-part="0" lang="en">Getting comfort with <a class="twitter-atreply pretty-link js-nav" data-mentioned-user-id="191225303" dir="ltr" href="/djangoproject"><s>@</s><b>djangoproject</b></a> <img alt="😀" aria-label="Emoji: Grinning face" class="Emoji Emoji--forText" draggable="false" src="https://abs.twimg.com/emoji/v2/72x72/1f600.png" title="Grinning face">
+<a class="twitter-timeline-link" data-expanded-url="https://www.djangoproject.com/" dir="ltr" href="https://t.co/yuo2W36qBs" rel="nofollow" target="_blank" title="https://www.djangoproject.com/"><span class="tco-ellipsis"></span><span class="invisible">https://www.</span><span class="js-display-url">djangoproject.com</span><span class="invisible">/</span><span class="tco-ellipsis"><span class="invisible"> </span></span></a></img></p>
+<hr>
