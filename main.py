@@ -1,4 +1,4 @@
-import os
+import os, sys
 import requests
 from bs4 import BeautifulSoup
 import time, datetime
@@ -14,22 +14,19 @@ USER_NAME= "SnShines"
 URL= "https://twitter.com/"+ USER_NAME
 
 
+
 def getPosts(url):
     print("Fetching tweets from twitter handle: @"+ USER_NAME)
-    out_file= open("posts.html", "w")
-
     r= requests.get(url)
+
     #print(r.text)
-    out_file.write(r.text)
-    out_file.close()
+    return r.text
 
 
 
-def parsePosts(file_name, interest_date):
+def parsePosts(html_page, interest_date):
     print("Parsing fetched html page to find today's tweets...")
-    posts_file= open(file_name, "r")
-    posts_data= posts_file.read()
-    posts_file.close()
+    posts_data= html_page
 
     entries= []
     flag= True
@@ -77,12 +74,19 @@ def makeDayoneEntry(entries):
     entry_text= "".join(entries)
     entry_text= "Today's tweets\n"+ entry_text
 
-    entry_file= open("entries.txt", "w")
-    entry_file.write(entry_text)
-    entry_file.close()
+    print("goint to try block............")
+    try:
+        print("1")
+        #outText= 'echo "%s" | dayone new' % entry_text
+        outText= 'echo "asdfasdf" | dayone new'
+        print("2")
+        print(outText)
+        print("3")
+        os.system(outText)
+        print("wrote the entry")
+    except:
+        print(sys.exc_info())
 
-    outText= "dayone new<entries.txt"
-    os.system(outText)
 
 
 
@@ -91,10 +95,10 @@ if __name__== "__main__":
     interest_date= (time.strftime("%Y-%m-%d"))
 
     # Fetch tweets from provided twitter handle
-    getPosts(URL)
+    html_page= getPosts(URL)
 
     # Parse fetched html page
-    entries= parsePosts("posts.html", interest_date)
+    entries= parsePosts(html_page, interest_date)
 
     # make dayOne entry if there are enough entries
     if len(entries)>0:
