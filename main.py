@@ -1,3 +1,5 @@
+#!/bin/bash
+
 import os, sys
 import requests
 from bs4 import BeautifulSoup
@@ -74,16 +76,9 @@ def makeDayoneEntry(entries):
     entry_text= "".join(entries)
     entry_text= "Today's tweets\n"+ entry_text
 
-    print("goint to try block............")
     try:
-        print("1")
-        #outText= 'echo "%s" | dayone new' % entry_text
-        outText= 'echo "asdfasdf" | dayone new'
-        print("2")
-        print(outText)
-        print("3")
+        outText= 'echo "%s" | dayone new' % entry_text
         os.system(outText)
-        print("wrote the entry")
     except:
         print(sys.exc_info())
 
