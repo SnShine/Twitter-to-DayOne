@@ -1,0 +1,95 @@
+sh: dayone: command not found
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 85, in makeDayoneEntry
+    print(outText)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xa0' in position 707: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 109, in <module>
+    makeDayoneEntry(entries)
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 90, in makeDayoneEntry
+    print(sys.exc_info())
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2026' in position 782: ordinal not in range(128)
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 85, in makeDayoneEntry
+    print(outText)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xa0' in position 707: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 109, in <module>
+    makeDayoneEntry(entries)
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 90, in makeDayoneEntry
+    print(sys.exc_info())
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2026' in position 782: ordinal not in range(128)
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 85, in makeDayoneEntry
+    print(outText)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xa0' in position 707: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 109, in <module>
+    makeDayoneEntry(entries)
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 90, in makeDayoneEntry
+    print(sys.exc_info())
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2026' in position 782: ordinal not in range(128)
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 85, in makeDayoneEntry
+    print(outText)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xa0' in position 707: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 109, in <module>
+    makeDayoneEntry(entries)
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 90, in makeDayoneEntry
+    print(sys.exc_info())
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2026' in position 782: ordinal not in range(128)
+sh: dayone: command not found
+sh: dayone: command not found
+sh: dayone: command not found
+sh: dayone: command not found
+sh: dayone: command not found
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 87, in makeDayoneEntry
+    print(outText)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xa0' in position 707: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 111, in <module>
+    makeDayoneEntry(entries)
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py", line 92, in makeDayoneEntry
+    print(sys.exc_info())
+UnicodeEncodeError: 'ascii' codec can't encode character '\u2026' in position 782: ordinal not in range(128)
+sh: line 5: dayone: command not found
+sh: line 5: dayone: command not found
+sh: line 5: dayone: command not found
+sh: line 5: dayone: command not found
+sh: line 5: dayone: command not found
+sh: line 5: dayone: command not found
+sh: line 5: dayone: command not found
+sh: line 5: dayone: command not found
+sh: line 5: dayone: command not found
+sh: line 5: dayone: command not found
+/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.sh: line 5: dayone: command not found
+/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.sh: line 5: dayone: command not found
+/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.sh: line 6: dayone: command not found
+/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.bash: line 6: dayone: command not found
+/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.bash: line 6: dayone: command not found
+/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.bash: line 6: dayone: command not found
+/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.bash: line 6: dayone: command not found
+/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.bash: line 6: dayone: command not found
+/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.bash: line 6: dayone: command not found
+bash: dayone: command not found
+bash: dayone: command not found
+sh: line 5: dayone: command not found
+sh: line 5: dayone: command not found
+sh: line 3: echo: write error: Broken pipe
