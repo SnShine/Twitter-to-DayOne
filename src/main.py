@@ -77,7 +77,8 @@ def makeDayoneEntry(entries):
     entry_text= "Today's tweets\n"+ entry_text
 
     try:
-        outText= 'echo "%s" | dayone new' % entry_text
+        # need to give full path to commands as launchd doen't include your $PATH
+        outText= 'echo "%s" | /usr/local/bin/dayone new' % entry_text
         os.system(outText)
     except:
         print(sys.exc_info())

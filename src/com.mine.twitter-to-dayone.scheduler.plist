@@ -11,24 +11,22 @@
     </dict>
     <key>ProgramArguments</key>
     <array>
-        <!-- <string>/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.bash</string> -->
+        <!-- # need to give full path to commands as launchd doen't include your $PATH -->
         <string>/Users/SnShines/anaconda3/bin/python</string>
-        <string>/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/main.py</string>
+        <string>/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py</string>
     </array>
     <key>StandardOutPath</key>
-    <string>/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/out.log</string>
+    <string>/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/logs/out.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/err.log</string>
+    <string>/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/logs/err.log</string>
     <key>RunAtLoad</key>
-    <true/>
-    <!-- <key>StartCalendarInterval</key>
+    <false/>
+    <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>
-        <integer>23</integer>
+        <integer>14</integer>
         <key>Minute</key>
-        <integer>22</integer>
-    </dict> -->
-    <key>StartInterval</key>
-        <integer>20</integer>
+        <integer>38</integer>
+    </dict>
 </dict>
 </plist>
