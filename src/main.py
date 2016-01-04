@@ -95,8 +95,8 @@ if __name__== "__main__":
 
     # Fetch tweets from provided twitter handle
     html_page= getPosts(URL)
-    out_file= open("tweets.html", "w")
-    out_file.write(html_page)
+    # out_file= open("tweets.html", "w")
+    # out_file.write(html_page)
 
     # Parse fetched html page
     entries= parsePosts(html_page, interest_date)

@@ -96,3 +96,59 @@ sh: line 3: echo: write error: Broken pipe
 sh: line 10: dayone: command not found
 sh: line 10: dayone: command not found
 sh: line 3: echo: write error: Broken pipe
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
+Traceback (most recent call last):
+  File "/Users/SnShines/Documents/GitHub/Twitter-to-DayOne/src/main.py", line 98, in <module>
+    out_file= open("tweets.html", "w")
+PermissionError: [Errno 13] Permission denied: 'tweets.html'
