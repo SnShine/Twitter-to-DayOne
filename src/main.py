@@ -36,7 +36,7 @@ def parsePosts(html_page, interest_date):
 
     find_string= '<a href="/'+ USER_NAME+ '/status'
     while flag and find_string in posts_data:
-        entry_text= ""
+        entry_text= "["
 
         posts_data= posts_data[posts_data.index(find_string):]
         soup= BeautifulSoup(posts_data, "html.parser")
@@ -48,10 +48,9 @@ def parsePosts(html_page, interest_date):
 
         if (post_date[:10])== interest_date:
             entry_text+= post_date[11:]
-            entry_text+= " - https://twitter.com"+ soup.a["href"]
+            entry_text+= "] - https://twitter.com"+ soup.a["href"]
             entry_text+= "\n\n"
             entry_text+= str(soup.p)
-            entry_text+= "\n<hr>\n"
 
             entries.append(entry_text)
         else:
@@ -73,7 +72,7 @@ def makeDayoneEntry(entries):
     entries= entries[::-1]
     #print(entries)
 
-    entry_text= "".join(entries)
+    entry_text= "\n<hr>\n".join(entries)
     entry_text= "Today's tweets\n"+ entry_text
 
     try:
@@ -92,6 +91,8 @@ if __name__== "__main__":
 
     # Fetch tweets from provided twitter handle
     html_page= getPosts(URL)
+    out_file= open("tweets.html", "w")
+    out_file.write(html_page)
 
     # Parse fetched html page
     entries= parsePosts(html_page, interest_date)
