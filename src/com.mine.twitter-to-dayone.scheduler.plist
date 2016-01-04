@@ -4,11 +4,6 @@
 <dict>
     <key>Label</key>
     <string>com.mine.twitter-to-dayone.scheduler</string>
-    <key>KeepAlive</key>
-    <dict>
-        <key>SuccessfulExit</key>
-        <false/>
-    </dict>
     <key>ProgramArguments</key>
     <array>
         <!-- # need to give full path to commands as launchd doen't include your $PATH -->
@@ -24,9 +19,9 @@
     <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>
-        <integer>14</integer>
+        <integer>23</integer>
         <key>Minute</key>
-        <integer>38</integer>
+        <integer>59</integer>
     </dict>
 </dict>
 </plist>
