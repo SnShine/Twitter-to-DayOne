@@ -50,7 +50,11 @@ def parsePosts(html_page, interest_date):
             entry_text+= post_date[11:]
             entry_text+= "] - https://twitter.com"+ soup.a["href"]
             entry_text+= "\n\n"
-            entry_text+= str(soup.p)
+            # need to find tweet with class = tweet-text or TweetTextSize
+            interested_p= soup.find_all("p", {"class":"TweetTextSize"})
+            # print(interested_p[0])
+            entry_text+= str(interested_p[0])
+
 
             entries.append(entry_text)
         else:
