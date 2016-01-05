@@ -27,7 +27,7 @@ def getPosts(url):
 
 
 def parsePosts(html_page, interest_date):
-    print("Parsing fetched html page to find today's tweets...")
+    #print("Parsing fetched html page to find today's tweets...")
     posts_data= html_page
 
     entries= []
@@ -92,6 +92,7 @@ def makeDayoneEntry(entries):
 if __name__== "__main__":
     # get current date to cross-check with parsed tweets
     interest_date= (time.strftime("%Y-%m-%d"))
+    print(time.strftime("%Y-%m-%d %H-%M-%S"))
 
     # Fetch tweets from provided twitter handle
     html_page= getPosts(URL)
