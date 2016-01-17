@@ -92,6 +92,7 @@ def makeDayoneEntry(entries):
 if __name__== "__main__":
     # get current date to cross-check with parsed tweets
     interest_date= (time.strftime("%Y-%m-%d"))
+    #interest_date= "2016-01-08"
     print("\n")
     print(time.strftime("%Y-%m-%d %H:%M:%S"))
 
