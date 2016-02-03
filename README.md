@@ -5,6 +5,16 @@
 
 ![Alt text](/preview_2.png?raw=true)
 
+## Installation
+
+Python is required to run this. You can install it on Mac using:
+
+```bash
+brew install python
+pip install requests
+pip install BeautifulSoup4
+```
+
 ## Usage
 
 * Change the username in `src/main.py` to your username
