@@ -17,6 +17,9 @@ USER_NAME= "SnShines"
 
 URL= "https://twitter.com/"+ USER_NAME
 
+# Uncomment to show replies too
+# URL= "https://twitter.com/"+ USER_NAME + "/with_replies"
+
 
 def getPosts(url):
     print("Fetching tweets from twitter handle: @"+ USER_NAME)
