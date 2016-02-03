@@ -7,7 +7,7 @@
 
 ## Installation
 
-Python is required to run this. You can install it on Mac using:
+Python is required to run this. The [Day One CLI tool](http://help.dayoneapp.com/day-one-tools) is also needed. You can install it on Mac using:
 
 ```bash
 brew install python
