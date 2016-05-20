@@ -4,6 +4,8 @@ import os, sys
 import requests
 from bs4 import BeautifulSoup
 import time, datetime
+reload(sys)
+sys.setdefaultencoding("utf-8")
 
 '''
 1. Set the USER_NAME to your twitter handle
@@ -15,19 +17,18 @@ USER_NAME= "SnShines"
 
 URL= "https://twitter.com/"+ USER_NAME
 
+# Uncomment to show replies too
+# URL= "https://twitter.com/"+ USER_NAME + "/with_replies"
 
 
 def getPosts(url):
     print("Fetching tweets from twitter handle: @"+ USER_NAME)
     r= requests.get(url)
 
-    #print(r.text)
     return r.text
 
 
-
 def parsePosts(html_page, interest_date):
-    #print("Parsing fetched html page to find today's tweets...")
     posts_data= html_page
 
     entries= []
@@ -44,8 +45,6 @@ def parsePosts(html_page, interest_date):
         unix_time= (soup.a.span["data-time"])
         post_date= str(datetime.datetime.fromtimestamp(int(unix_time)))
 
-        #print(post_date[:10], interest_date)
-
         if (post_date[:10])== interest_date:
             entry_text+= post_date[11:]
             entry_text+= "] - https://twitter.com"+ soup.a["href"]
@@ -60,11 +59,6 @@ def parsePosts(html_page, interest_date):
         else:
             flag= False
 
-        # print(soup.a)
-        # print(soup.p)
-        # print("\n")
-
-
         posts_data= posts_data[1:]
 
     return entries
@@ -74,7 +68,6 @@ def parsePosts(html_page, interest_date):
 def makeDayoneEntry(entries):
     print("Making DayOne entry...")
     entries= entries[::-1]
-    #print(entries)
 
     entry_text= "\n<hr>\n".join(entries)
     entry_text= "Today's tweets\n"+ entry_text
@@ -87,19 +80,15 @@ def makeDayoneEntry(entries):
         print(sys.exc_info())
 
 
-
-
 if __name__== "__main__":
     # get current date to cross-check with parsed tweets
     interest_date= (time.strftime("%Y-%m-%d"))
-    #interest_date= "2016-01-08"
+    
     print("\n")
     print(time.strftime("%Y-%m-%d %H:%M:%S"))
 
     # Fetch tweets from provided twitter handle
     html_page= getPosts(URL)
-    # out_file= open("tweets.html", "w")
-    # out_file.write(html_page)
 
     # Parse fetched html page
     entries= parsePosts(html_page, interest_date)
