@@ -31,20 +31,25 @@ def parsePosts(html_page, interest_date):
     posts_data= html_page
 
     entries= []
+    # adds tries to make this work if the user has a pinned tweet
+    tries = 0
     flag= True
 
 
     find_string= '<a href="/'+ USER_NAME+ '/status'
     while flag and find_string in posts_data:
+
+        tries += 1
         entry_text= "["
 
         posts_data= posts_data[posts_data.index(find_string):]
         soup= BeautifulSoup(posts_data, "html.parser")
 
         unix_time= (soup.a.span["data-time"])
+        # print(unix_time)
         post_date= str(datetime.datetime.fromtimestamp(int(unix_time)))
 
-        #print(post_date[:10], interest_date)
+        print(post_date[:10], interest_date)
 
         if (post_date[:10])== interest_date:
             entry_text+= post_date[11:]
@@ -58,7 +63,10 @@ def parsePosts(html_page, interest_date):
 
             entries.append(entry_text)
         else:
-            flag= False
+            if tries == 1:
+                flag = True
+            else:
+                flag= False
 
         # print(soup.a)
         # print(soup.p)
@@ -92,6 +100,7 @@ def makeDayoneEntry(entries):
 if __name__== "__main__":
     # get current date to cross-check with parsed tweets
     interest_date= (time.strftime("%Y-%m-%d"))
+    # print(interest_date)
     #interest_date= "2016-01-08"
     print("\n")
     print(time.strftime("%Y-%m-%d %H:%M:%S"))
