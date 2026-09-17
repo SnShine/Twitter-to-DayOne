@@ -21,7 +21,7 @@
         <key>Hour</key>
         <integer>23</integer>
         <key>Minute</key>
-        <integer>59</integer>
+        <integer>00</integer>
     </dict>
 </dict>
 </plist>
